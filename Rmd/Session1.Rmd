@@ -1,0 +1,294 @@
+---
+title: "Internationale Immobilienmärkte"
+subtitle: "Intake 2020 A"
+author: "Prof. Dr. Jörg Schoder"
+institute: "ISBA" 
+date: "`r Sys.Date()`"
+bibliography: my_bib.json
+reference-section-title: Quellenverzeichnis
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: 
+        - default
+        - ../schoder_theme.css
+        - xaringan-themer.css
+    includes:
+      after_body: ../insert-logo.html
+    lib_dir: ../libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    seal: false
+    
+
+    
+---
+class: title-slide
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+style_xaringan(text_color = "#232461",inverse_text_color = "#FFFFFF",inverse_background_color = "#232461", title_slide_background_color = "#232461",header_background_color = "#232461",header_color = "#FFFFFF",header_h1_font_size = "32px",
+  header_h2_font_size = "26px",link_color="#d84116",
+  header_h3_font_size = "20px",text_slide_number_color = "#232461",text_slide_number_font_size = "0.5em")
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view","scribble","panelset","tachyons"))
+xaringanExtra::style_panelset_tabs(font_family = "inherit")
+#xaringanExtra::use_search(show_icon = TRUE)
+#weitere: "share_again","animate_css", "webcam","freezeframe","clipboard","fit_screen","extra-styles" 
+xaringanExtra::use_editable(expires = 1)
+``` 
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(fontawesome)
+```
+
+
+# Nationale und Internationale Immobilienmärkte
+
+
+## Intake 2020 A  
+
+### Prof. Dr. Jörg Schoder
+
+
+# Session 1
+
+
+
+---
+layout: true
+
+<div class="my-footer"></div>       
+
+<div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px">`r r2symbols::sym('copyright')``r rmarkdown::metadata$author`</div>
+
+
+---
+name: intro
+class: left
+
+# Intro
+
+<iframe width="1000" height="550" src="https://www.youtube.com/embed/HRILg3916oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+---
+name: Orga
+class: inverse, center
+
+<br>
+<br>
+
+## Organisatorisches
+
+.blockquote[Kontaktdaten]
+
+.blockquote[Lernziele]
+
+.blockquote[Workload und Prüfungsleistungen]
+
+
+
+---
+name: kontakt
+class: left
+
+# Kontakt
+<br>
+<br>
+.blockquote[.center[
+.bold[Prof. Dr. Jörg Schoder]
+<br>
+<br>
+Studienbereichsleiter
+<br>
+Immobilienwirtschaft,
+Sportmanagement
+<br>
+<br>
+Raum A 102
+<br>
+`r fa("phone")` +49 761 - 791 999-87
+<br>
+`r fa("envelope")` [j.schoder@isba-freiburg.de](j.schoder@isba-freiburg.de)
+<br>
+<br>
+Sprechstunde: nach Vereinbarung
+]
+]
+
+
+<br>
+`r fa("linkedin")`[jfschoder](https://www.linkedin.com/in/jfschoder/) ? Gerne! Nach Abschluss des Studiums.
+
+
+---
+name: orga1
+class: left
+
+# Lernziele Teilmodul "Internationale Immobilienmärkte"
+
+* .bold[Inhaltliche Kompetenzen]:
+    * Volkswirtschaftliche Bedeutung der Immobilienmärkte
+    * Mikro- und Makroökonomische Erklärungen von Marktergebnissen, Rolle von Institutionen
+    * Vergleich ausgewählter internationaler Märkte (institutionenökonomischer Ansatz)
+
+
+--
+
+* .bold[Methodenkompetenzen]:
+  * Einordnung von Marktentwicklungen und Ableitung von strategischen Handlungsalternativen
+  * Rolle der Rahmenbedingungen und Ableitung strategischer Handlungskonzepte
+
+
+--
+
+* .bold[Fachübergreifende Kompetenzen]:
+  * Zusammenhang gesamtwirtschaftlicher Entwicklungen und Immobilienmarkttrends
+  * Interdependenz von Immobilien- und Kapitalmärkten
+
+
+---
+name: orga2
+class: left
+
+# Workload und Prüfungsleistung
+
+* Modul: Immobilienmärkte
+  * Teilmodul: Staat und Immobilienmarkt
+  * Teilmodul: Internationale Immobilienmärkte
+* Leistungspunkte für das Modul: Immobilienmärkte: 
+	4 ECTS, je 2 ECTS für die beiden Teilmodule
+
+* Workload:
+  * Je 20 Stunden Präsenzunterricht 
+  * Je 40 Stunden Selbststudium (Hausaufgaben, Literatur und Recherchen)
+  
+* Prüfungsleistung: kombinierte Prüfungsleistung:
+  * Continuous Assessment (mindestens 3 Präsentationen)
+  * Projektarbeit (Modul) als Gruppenarbeit
+      * Umfang 2500-3000 Wörter
+      * Aspekte aus beiden Teilmodulen
+      * Abgabetermin: 15.07.2023 (?)
+
+
+---
+name: PA
+class: left
+
+# Projektarbeit
+
+.pull-left[
+```{r, echo=FALSE,fig.align='center',out.width="95%"}
+knitr::include_graphics('../images/session1/978-3-319-32031-1.webp')
+```
+]
+.pull-right[
+```{r, echo=FALSE,fig.align='center',out.width="95%"}
+knitr::include_graphics('../images/session1/978-3-030-49032-4.webp')
+```
+]
+.quelle[Bildquelle: [Springer Nature](https://media.springernature.com).]
+
+
+???
+
+Ergänzend: Diverse Gutachten, Artikel und Arbeitspapiere
+
+
+---
+name: Lit
+class: left
+
+# Literatur
+
+.blockquote[
+"A book about global property investment is rare, and a good one is, frankly, **difficult** to write. **Which countries** should be referred to? Can we **extrapolate** from the small number of markets we are familiar with? If so, how much **generalization** is reasonable, fair or justified? How big is the language barrier? Are the **same concepts** familiar to real estate investors in all markets, even though they may have **different labels**?" .tr[
+— .small[[Baum/Hartzell 2012, S. x](https://onlinelibrary.wiley.com/doi/book/10.1002/9781444347289)]
+]
+]
+
+
+
+
+---
+name: lit
+class: left
+
+# Ausgewählte Literatur
+
+## Bücher
+
+.blockquote[
+[Vornholz, G. (2015)](https://www.degruyter.com/document/doi/10.1515/9783110437829/html?lang=de): Internationale Immobilienökonomie. Globalisierung der Immobilienmärkte. De Gruyter Oldenbourg.
+]
+
+
+.blockquote[
+[Seabrooke, W. et al. (2004)](https://www.wiley.com/en-us/International+Real+Estate%3A+An+Institutional+Approach-p-9781405103084): International Real Estate: An Institutional Approach. Wiley-Blackwell.
+]
+
+## Berichte und Gutachten
+
+.blockquote[
+[Feld, L. et al. (2023)](https://zia-deutschland.de/fruehjahrsgutachten/): Frühjahrsgutachten Immobilienwirtschaft 2023 des Rates der Immobilienweisen. ZIA, Berlin.
+]
+
+.blockquote[
+[Geng, N. (2018)](https://www.imf.org/en/Publications/WP/Issues/2018/07/13/Fundamental-Drivers-of-House-Prices-in-Advanced-Economies-46053): Fundamental Drivers of House Prices in Advanced Economies. IMF Working Paper No. 2018/164.
+]
+
+.blockquote[
+[Crowe, C. et al. (2011)](https://www.elibrary.imf.org/view/journals/001/2011/091/article-A001-en.xml): How to Deal with Real Estate Booms: Lessons from Country Experiences. IMF Working Paper No. 2011/91. 
+]
+
+
+---
+name: lit2
+class: left
+
+# Ausgewählte Literatur (cont'd)
+
+## Artikel
+
+.blockquote[
+[Duca, J. et al. (2021)](https://www.aeaweb.org/articles?id=10.1257/jel.20201325): What Drives House Price Cycles? International Experience and Policy Issues. In: Journal of Economic Literature, 59(3). S. 773-864.
+]
+
+.blockquote[
+[Knoll, K. et al. (2017)](https://www.aeaweb.org/articles?id=10.1257/aer.20150501): No Price Like Home: Global House Prices, 1870-2012. In: American Economic Review, 107 (2). S. 331-353.
+]
+
+.blockquote[
+[Cerutti, E. et al. (2017)](https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237): Housing finance and real-estate booms: A cross-country perspective. In: Journal of Housing Economics, 38. S. 1-13.
+]
+
+
+.blockquote[
+[Guest, R. & N. Rohde (2017)](https://onlinelibrary.wiley.com/doi/abs/10.1111/abac.12110): The Contribution of Foreign Real Estate Investment to Housing Price Growth in Australian Capital Cities. In: ABACUS, 53(3). S. 304-318.
+]
+
+.blockquote[
+[Fernandez, R. & M. Aalbers (2016)](https://journals.sagepub.com/doi/abs/10.1177/1024529415623916?journalCode=ccha): Financialization and housing: Between globalization and Varieties of Capitalism. In: Competition & Change, 20(2). S. 71-88.
+]
+
+
+---
+name: timeline
+class: left
+
+# Semesterplanung
+
+
+```{r, echo=FALSE,fig.align='center',out.width="100%"}
+knitr::include_graphics('../images/session1/roadmap_Intake2020A.PNG')
+```
+
+<br>
+
+.pull-right[**Abgabe Projektarbeit:** 15.07.2023?]
+

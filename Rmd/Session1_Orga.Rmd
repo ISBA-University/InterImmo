@@ -1,28 +1,27 @@
 ---
 title: "Internationale Immobilienmärkte"
-subtitle: "Intake 2020 A"
+subtitle: "Intake 2020 B"
 author: "Prof. Dr. Jörg Schoder"
 institute: "ISBA" 
 date: "`r Sys.Date()`"
-bibliography: my_bib.json
+bibliography: ../lit/my_bib.json
 reference-section-title: Quellenverzeichnis
 output:
   xaringan::moon_reader:
     self_contained: true
     css: 
         - default
-        - ../schoder_theme.css
+        - ../css/schoder_theme.css
         - xaringan-themer.css
     includes:
-      after_body: ../insert-logo.html
+      after_body: ../css/insert-logo.html
     lib_dir: ../libs
     nature:
+      slideNumberFormat: "%current%/%total%"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
     seal: false
-    
-
     
 ---
 class: title-slide
@@ -35,28 +34,42 @@ style_xaringan(text_color = "#232461",inverse_text_color = "#FFFFFF",inverse_bac
 ```
 
 ```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_progress_bar(color = "#d84116", location = "bottom")
 xaringanExtra::use_xaringan_extra(c("tile_view","scribble","panelset","tachyons"))
 xaringanExtra::style_panelset_tabs(font_family = "inherit")
 #xaringanExtra::use_search(show_icon = TRUE)
 #weitere: "share_again","animate_css", "webcam","freezeframe","clipboard","fit_screen","extra-styles" 
 xaringanExtra::use_editable(expires = 1)
-``` 
+xaringanExtra::use_freezeframe(trigger = "hover")
+```
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(latex2exp)
 library(fontawesome)
 ```
 
+# Internationale Immobilienmärkte
 
-# Nationale und Internationale Immobilienmärkte
 
+## Organisatorisches
 
-## Intake 2020 A  
+### Sommersemester 2023 - Intake 2020B
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ### Prof. Dr. Jörg Schoder
-
-
-# Session 1
+<br>
+.mycontacts[
+`r fa('github')` @ISBA-University
+`r fa('linkedin')` @jfschoder
+]
 
 
 
@@ -173,7 +186,7 @@ class: left
   * Projektarbeit (Modul) als Gruppenarbeit
       * Umfang 2500-3000 Wörter
       * Aspekte aus beiden Teilmodulen
-      * Abgabetermin: 15.07.2023 (?)
+      * Abgabetermin: 15.10.2023 (?)
 
 
 ---
@@ -238,9 +251,19 @@ class: left
 [Feld, L. et al. (2023)](https://zia-deutschland.de/fruehjahrsgutachten/): Frühjahrsgutachten Immobilienwirtschaft 2023 des Rates der Immobilienweisen. ZIA, Berlin.
 ]
 
+
+.blockquote[
+[Whitehead, C. et al. (2023)](https://www.lse.ac.uk/geography-and-environment/research/lse-london/documents/Reports/Rapport-Financialization-Samlet-05.06.pdf): Financialization in 13 cities – an international comparative report. The London School of Economics and Political Science in collaboration with the Knowledge Centre for Housing Economics, London, 95 Seiten.
+]
+
 .blockquote[
 [Geng, N. (2018)](https://www.imf.org/en/Publications/WP/Issues/2018/07/13/Fundamental-Drivers-of-House-Prices-in-Advanced-Economies-46053): Fundamental Drivers of House Prices in Advanced Economies. IMF Working Paper No. 2018/164.
 ]
+
+
+
+
+???
 
 .blockquote[
 [Crowe, C. et al. (2011)](https://www.elibrary.imf.org/view/journals/001/2011/091/article-A001-en.xml): How to Deal with Real Estate Booms: Lessons from Country Experiences. IMF Working Paper No. 2011/91. 
@@ -277,6 +300,8 @@ class: left
 ]
 
 
+
+
 ---
 name: timeline
 class: left
@@ -285,10 +310,10 @@ class: left
 
 
 ```{r, echo=FALSE,fig.align='center',out.width="100%"}
-knitr::include_graphics('../images/session1/roadmap_Intake2020A.PNG')
+knitr::include_graphics('../images/session1/roadmap_Intake2020B.PNG')
 ```
 
 <br>
 
-.pull-right[**Abgabe Projektarbeit:** 15.07.2023?]
+.pull-right[**Abgabe Projektarbeit:** 15.10.2023?]
 

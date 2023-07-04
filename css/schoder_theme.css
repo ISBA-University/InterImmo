@@ -1,3 +1,27 @@
+/* CSS-Code für die Animation */
+@keyframes yourAnimation {
+  0% {
+    /* Ausgangszustand der Animation */
+    /* Hier den gewünschten Ausgangszustand definieren */
+  }
+  100% {
+    /* Endzustand der Animation */
+    /* Hier den gewünschten Endzustand definieren */
+  }
+}
+
+/* CSS-Regeln für das Element, das animiert werden soll */
+.myanim {
+  /* Hier die gewünschten Stile für das animierte Element definieren */
+  animation-name: yourAnimation;
+  animation-duration: 4s; /* Dauer der Animation in Sekunden */
+  animation-timing-function: ease-in-out; /* Art der Timing-Funktion */
+  animation-delay: 2s; /* Verzögerung vor dem Start der Animation in Sekunden */
+  animation-iteration-count: 1; /* Anzahl der Animationsschleifen (hier: einmal) */
+}
+
+
+
 /* Layout Titelseite  */
 .title-slide {
   background-color: #232461;
@@ -8,6 +32,12 @@
   display: none;
 }
 
+.mycontacts {
+  text-align: left;
+  margin-top: -20px;
+  margin-left: 15px;
+  line-height: 80%;
+}
 
 .title-slide h1  {
   font-size: 40px;

@@ -1,0 +1,934 @@
+---
+title: "Internationale Immobilienmärkte"
+subtitle: "Intake 2020 B"
+author: "Prof. Dr. Jörg Schoder"
+institute: "" 
+date: "`r Sys.Date()`"
+bibliography: ../lit/RealEstate.json
+reference-section-title: Quellenverzeichnis
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: 
+        - default
+        - ../css/schoder_theme.css
+        - xaringan-themer.css
+    includes:
+      after_body: ../css/insert-logo.html
+    lib_dir: ../libs
+    nature:
+      slideNumberFormat: "%current%/%total%"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    seal: false
+    
+
+    
+---
+class: title-slide
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+style_xaringan(text_color = "#232461",inverse_text_color = "#FFFFFF",inverse_background_color = "#232461", title_slide_background_color = "#232461",header_background_color = "#232461",header_color = "#FFFFFF",header_h1_font_size = "32px",
+  header_h2_font_size = "26px",link_color="#d84116",
+  header_h3_font_size = "20px",text_slide_number_color = "#232461",text_slide_number_font_size = "0.5em")
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_progress_bar(color = "#d84116", location = "bottom")
+xaringanExtra::use_xaringan_extra(c("tile_view","scribble","panelset","tachyons"))
+xaringanExtra::style_panelset_tabs(font_family = "inherit")
+#xaringanExtra::use_search(show_icon = TRUE)
+#weitere: "share_again","animate_css", "webcam","freezeframe","clipboard","fit_screen","extra-styles" 
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_freezeframe(trigger = "hover")
+```
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(fontawesome)
+```
+
+
+# Internationale Immobilienmärkte
+
+
+## Intake 2020B
+
+### Europäische Investmentmärkte - Aktuelle Trends.
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+### Sommersemester 2023 
+<br>
+### Prof. Dr. Jörg Schoder
+.mycontacts[
+`r fa('github')` @ISBA-University
+`r fa('linkedin')` @jfschoder
+]
+
+
+
+
+
+
+---
+layout: true
+
+<div class="my-footer"></div>       
+
+<div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px">`r r2symbols::sym('copyright')``r rmarkdown::metadata$author`</div>
+
+
+
+
+---
+name: agenda
+class: inverse, center, middle
+
+# Das Programm
+
+
+.blockquote[Teil 1: Blick zurück - jüngste Entwicklungen]
+
+.blockquote[Teil 2: Blick voraus - "Investor Intentions"]
+
+.blockquote[Teil 3: Investmenttehmen - Umfeldanalyse]
+
+
+---
+name: Teil1
+class: inverse, center, middle
+
+## Teil 1
+
+## Blick zurück
+
+.blockquote[Wertentwicklung im langfristigen Vergleich]
+
+.blockquote[Entwicklung Investmentvolumina]
+
+.blockquote[Renditeentwicklung am Beispiel Deutschlands]
+
+
+---
+name: ewigeRente
+class: left
+
+# Bewertungseffekte von Zinsanstiegen
+
+```{r ewigerente, echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics(xfun::from_root("images/session_IRE-Trends/zinssensitiv.svg"))
+```
+
+
+
+---
+name: stoxx600
+class: left
+
+# Repricing an den öffentlichen Märkten
+
+```{r stoxx600,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/STOXX600_vs_RE.svg')
+```
+
+.quelle[Eigene Darstellung. Datenquelle: [investing.com](https://www.investing.com/indices/stoxx-europe-600-real-estate-price-historical-data).]
+
+
+
+
+
+
+---
+name: hp-index
+class: left
+
+# Ausstehendes Repricing an privaten Märkten (?)
+
+
+.panelset[
+.panel[.panel-name[Wohnimmobilien EU]
+```{r hp-idxEU,echo=FALSE,message=FALSE,warning=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/houseprices_EU_select_small.svg')
+#source(xfun::from_root("R/houseprices.R"))
+#ggplotly(p_EUselect)
+```
+
+.quellePanURL[Eigene Darstellung. Datenquelle: [Eurostat (2023)](https://ec.europa.eu/eurostat/web/hicp/database).]
+]
+.panel[.panel-name[Vergleich EU und CH]
+```{r hp-idxCH,echo=FALSE,message=FALSE,warning=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/houseprices_EU-CH_small.svg')
+#source(xfun::from_root("R/houseprices.R"))
+#ggplotly(p_EUH2019)
+```
+.quellePanURL[Eigene Darstellung. Datenquelle: [Eurostat (2023)](https://ec.europa.eu/eurostat/web/hicp/database) bzw. [BFS (2023)](https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/immobilienpreise.html).]
+]
+]
+
+???
+
+* Macht einen stabileren Eindruck, aber natürlich nicht vergleichbar
+* Hier private Märkte (Wohnimmobilienindex, Eurostat bzw. IMPI des Schweizer Bundesamts für Statistik)
+* entsprechend werden auch nur Wohnimmobilien betrachtet
+* Bewertungszeitpunkte/-frequenz
+* **Angebotspreise** in der zweiten Jahreshälfte in einigen Märkten, bspw. in Deutschland durchaus deutlich korrigiert (tw. -10%)
+* **Ein wesentlicher Grund für die vergleichsweise stabilen Preise** ist das rückläufige Transaktionsvolumen
+
+
+
+---
+name: Volumen
+class: left
+
+# Rückläufige Immobilieninvestments in Europa
+
+
+.panelset[
+.panel[.panel-name[Volumen]
+```{r vol22,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Investmentvolumen_Europe_2022_(CBRE_2023).PNG')
+```
+
+<br>
+.quellePanURL[Quelle: [CBRE (2023, S.2).](https://cbre.vo.llnwd.net/grgservices/secure/European%20Investment%20Snapshot%20Q4%202022.pdf?e=1685045014&h=3544b86bf005e57325ccfd886fab3246)]
+]
+.panel[.panel-name[Regionen und Sektoren]
+<br>
+<br>
+
+```{r volsekreg,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Investment_Volumes_Europe_SektorRegionen_(CBRE_2023).PNG')
+```
+
+<br>
+
+.quellePanURL[Quelle: [CBRE (2023, S.1).](https://cbre.vo.llnwd.net/grgservices/secure/European%20Investment%20Snapshot%20Q4%202022.pdf?e=1685045014&h=3544b86bf005e57325ccfd886fab3246)]
+]
+.panel[.panel-name[Zeitvergleich]
+```{r vol1122,echo=FALSE,out.width='85%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Investment_Volumes_Europe_2011-2022_(CBRE_2023).png')
+```
+
+<br>
+.quellePanURL[Quelle: [CBRE (2023, S.2).](https://cbre.vo.llnwd.net/grgservices/secure/European%20Investment%20Snapshot%20Q4%202022.pdf?e=1685045014&h=3544b86bf005e57325ccfd886fab3246)]
+]
+]
+
+
+
+???
+
+
+* Die folgenden Zahlen von CBRE 2023 zeigen ein durchaus heterogenes Bild,
+  * sowohl sektoral
+  * als auch regional
+  
+* Insgesamt Rückgang des Investmentvolumens
+  * um 18% auf knapp über 300 Milliarden (von 371 Milliarden 2021).
+  * besonders starker Einbruch im 4. Quartal (-58% zum Vorjahresquartal)
+  * Wobei Q4-2021 einen absoluten Rekord aufstellte (mit 149Mrd.)
+  
+* NEXT PANEL
+* Aber: Folientitel zu pauschal. Sektoral und Regional unterschiedliche Entwicklung:
+* **Nach Sektoren**
+  * Entgegen der landläufigen Meinung im deutschsprachigen Raum, waren 2023 die Investitionen im Bereich der **Handelsimmobilien** robuster als in anderen Assetklassen bzw. konnten sogar zulegen (+20%)
+  * Stärkster Rückgang bei **Wohnimmobilien (-46%)**
+
+* **Nach Regionen**
+    * Steigerung der Investitionsvolumina in Südeuropa (Spanien +38%; Portugal +13%; Italien +12%)
+  * positivste Entwicklung in Belgien (+109%), allerdings mit Sondereffekt (Transaktion eines großen Büroimmobilienportfolios)
+  * Die **Top-3 Märkte nach Volumina** bleiben aber **UK, Deutschland und Frankreich** mit zusammen 171 Mrd. Euro bzw. **56% des Gesamtvolumens** in Europa.
+  * Besonders stark in Südeuropa auch: **Studentisches Wohnen** und Gesundheitsimmobilien (Hintergrund: Junge Menschen waren traditionell lange zu Hause, verlassen aber immer häufiger das Elternhaus um in einer anderen Stadt zu studieren)
+  
+* NEXT PANEL
+* Zeitlicher Verlauf zeigt, dass die Volumina  immer noch im Bereich der Jahre 2015-2021 lagen. 
+* Rückgang 2022 -18%
+* Allerdings wie erwähnt regional deutliche Unterschiede:
+  * D: -42% (gesamt), bei Gewerbeimmobilien sogar  75% nach Zahlen von EY (2023)
+
+
+---
+name: 5prozStudie
+class: left
+
+# Leichte Renditeanstiege bei Core-Immobilien in D
+
+## Bulwiengesa CoreMatrix
+```{r coreMatrix,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Core-Matrix_(bulwien_gesa_2022)_S2.PNG')
+```
+
+.quelle[Quelle: [bulwiengesa (2022, S. 2)](https://bulwiengesa.de/sites/default/files/2022-09/die-5-prozent-studie-2022-dt.pdf).]
+
+???
+
+* Insgesamt haben rückläufige Preise und in der Tendenz steigende Mieten zu einem Anstieg der Renditen geführt. 
+  * bspw. knapp 0,5 Prozentpunkte bei Wohnimmobilien in deutschen A-Städten
+* Bulwien-Gesa 5%-Studie
+* IRR-Ermittlung in Verbindung mit Monte-Carlo-Simulation
+  * Paremeter für die verschiedenen Asset-Klassen
+  * Basiswerte und Spannweiten u. a. für die Variablengruppen 
+    * Mietzins, 
+    * Leerstand und 
+    * Objekt- und Betriebskosten 
+  * Die aus der Cashflow-Berechnung hervorgegangene interne Verzinsung des Investments als Prognosewert bzw. IRR-Basiswert
+
+* **Core- vs. Non-Core-Investoren** Einteilung auf rein statistischer Ebene!
+  * Ausgehend von der Annahme, dass Core-Investoren
+weniger Risiko eingehen und dabei geringere Renditen akzeptieren und Non-Core-Investoren weniger risikoavers sind und höhere Renditeziele haben, wurde in der Studie der **Korridor** für Core- und Non-Core-Investoren abgesteckt.
+  * Ergebnisse einer **Monte-Carlo-Simultione der IRRs im 2. und 3. Quartile** als CORE.
+  * Der übrige Bereich – **ab einer erzielbaren Verzinsung von 6,49 % IRR Basiswert** als Raum für **Non-Core**-Investoren angesehen.
+
+* IRR
+  * Nachteil: Wiederanlageprämisse
+  * Vorteil: dynamisches Renditekonzept
+
+
+
+
+---
+name: Teil2
+class: inverse, center, middle
+
+## Teil 2
+
+## Blick voraus
+
+.blockquote[Einflussfaktoren Immobilienallokation]
+
+.blockquote[Deep Dive: Finanzierungsumfeld und Investmentstrategien]
+
+
+
+---
+name: MotiveIQ
+class: left
+
+# Motive für eine ... der Immobilienallokation
+
+.panelset[
+.panel[.panel-name[...Erhöhung...]
+```{r proIQ,echo=FALSE,out.width='80%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Gruende_Erhoehung_Immobilienquote_(CBRE_2023)_S9.PNG')
+```
+
+.quellePanURL[Quelle: [CBRE (2023), S. 10](https://www.cbre.de/-/media/project/cbre/shared-site/emea/germany/insights/Investor-Intentions-Survey-Deutschland-2023).]
+
+]
+.panel[.panel-name[...Reduzierung...]
+```{r conIQ,echo=FALSE,out.width='80%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Gruende_Reduzierung_Immobilienquote_(CBRE_2023)_S9.PNG')
+```
+
+.quellePanURL[Quelle: [CBRE (2023), S. 10](https://www.cbre.de/-/media/project/cbre/shared-site/emea/germany/insights/Investor-Intentions-Survey-Deutschland-2023).]
+
+]
+]
+
+
+???
+
+* Resultate zeigen, dass momentan eher mit einer Reduzierung von Immobilienquoten zu rechnen ist
+* CBRE Befragung vom Januar 2023
+* Stichprobe n=629 
+
+
+
+---
+name: denomEff
+class: left
+
+# Bezugsgrößen-Effekt (Beispiel US Pensionsfonds)
+
+<br>
+<br>
+```{r denoEff,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Denominator_Effect_US_(CBRE_2022).PNG')
+
+```
+
+.quelle[Quelle: [CBRE (2022).](https://www.cbre.com/insights/briefs/cotw-denominator-effect-takes-hold-as-pension-funds-real-estate-target-to-allocation)]
+
+???
+
+* CBRE (Oktober 2022) USA
+* In **Multiasset-Portfolios** 
+  * kann schlechte Performance anderer Assetklassen (2022 Aktien und Anleihen) dazu führen, 
+  * dass Immobilien verkauft werden müssen, um die  
+  * angestrebten **Portfoliogewichtungen** zu erreichen
+
+* Balken zeigen, wie weit bei den verschiedenen Fonds im Sample die tatsächliche Allokation (2021 bzw. 2022) von der Zielallokation abweicht
+
+
+---
+name: financing
+class: left
+
+# Finanzierungsformen und -bedarf
+
+.panelset[
+.panel[.panel-name[Kreditzinsen]
+```{r creditrates,echo=FALSE,out.width='85%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Immo_vs_Unternehmenskredite.svg')
+```
+
+.quellePanURL[Eigene Darstellung. Datenquelle: [EZB (2023)](https://sdw.ecb.europa.eu/home.do).]
+
+
+]
+.panel[.panel-name[Anteil variabler Verzinsung]
+
+```{r varZins,echo=FALSE,out.width='85%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Anteil_VariableZinsen.svg')
+```
+
+.quellePanURL[Eigene Darstellung. Datenquelle: [EZB (2023)](https://sdw.ecb.europa.eu/home.do).]
+]
+.panel[.panel-name[Refinanzierungslücke]
+
+```{r fundgap,echo=FALSE,out.width='90%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Funding_Gap_2023-2025_(AEW_2022).png')
+```
+
+.quellePanURL[Quelle: [AEW (2022, S. 8)](https://www.aew.com/site-assets/documents/2022_Sep_AEW-Research-Report_DRAFT21_FINAL.pdf).]
+]
+]
+
+
+???
+
+* Panel 1: Deutlicher Anstieg der Finanzierungskosten
+* Panel 2: Zunahme der Finanzierungen mit variabler Verzinsung. Hoffen auf bald sinkende Zinsen im letzten Jahr durchaus verbreitet
+* Panel 3: Refinanzierunglücke, Schätzung AEW (Boston)
+  * für UK, D und Frankreich ca. 24 Mrd. bis 2025
+  * Deutlich geringer als in der Finanzkrise, damals 70 Mrd.
+  * entspricht etwa 9% der Transaktionsvolumina in den letzten 3 Jahren
+* Based on the experience from the global financial crisis, this **relatively modest gap**   * will likely be **bridged by a combination of**
+    * equity top-ups, 
+    * junior debt plugs, 
+    * senior loan extensions & restructurings, 
+    * loan write-downs, and 
+    * discounted loan sales.
+
+
+---
+name: strateg
+class: left
+
+# "Polarisierung" von Investmentstrategien?
+
+.panelset[
+.panel[.panel-name[Transaktionsvolumen...]
+...nach Strategie (Deutschland)
+```{r volstrat,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Transaktionsvolumen_Risikoprofil_(JLL_2023).png')
+```
+
+.quellePanURL[Quelle: [JLL (2023, S. 5)](https://www.jll.de/content/dam/jll-com/documents/pdf/research/emea/germany/de/Investmentmarktueberblick-JLL-Deutschland.pdf).]
+
+]
+.panel[.panel-name[Investorenabsichten]
+
+Investorenabsichten (Europa)
+```{r invstrat,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Investment_Strategien_2022-2023_Europe_(CBRE_2023)_S13.png')
+
+```
+
+.quellePanURL[Quelle: [CBRE (2023, S.13)](https://www.cbre.com/-/media/project/cbre/shared-site/insights/books/2023-book-media-folder/esg-value-drivers-revealed-media-folder/2022_global_esg_survey.pdf).]
+]
+]
+
+
+
+
+???
+
+* JLL zeigt, dass von 2022 auf 2023 in Deutschland
+
+* wieder höhere Risikobereitschaft: Opportunistisch und NPL höhere, Value-Add und Core/Core+ geringere Präferenz
+* Interessant: Im Investor Intention survey für Deutschland  hat die Präferenz für Core von 2022 auf 2023 zugenommen. Insgesamt für Europa aber offenbar Abnahme.
+
+
+
+
+
+
+
+
+
+---
+name: Trends
+class: inverse, center, middle
+
+## Teil 3
+
+## Investmentthemen
+
+.blockquote[Makroökonomisches Umfeld]
+
+.blockquote[Nachhaltigkeit]
+
+.blockquote[Digitalisierung]
+
+
+
+---
+name: concerns
+class: left
+
+# Megatrends im Immobilieninvestment (D)
+
+<br>
+```{r megatrends,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/Megatrends_(EY_2023)_S29.png')
+```
+
+.quelle[Quelle: [EY (2023), S. 29](https://assets.ey.com/content/dam/ey-sites/ey-com/de_de/noindex/ey-de-trendbarometer-immobilien-investmentmarkt-2023.pdf?mkt_tok=NTIwLVJYUC0wMDMAAAGL81UnByZp5cIYQEofBummTcYfqRH_8IvfrSNbVSwAhQk2NgVTfw9qJsGH7fjJrKU3mQ_R4WYBVTvcr6ypweAR3Ki1uZwUrpg5MmW9bXZ1EJbmrRURzw)]
+
+
+???
+
+* aus EY Trendbarometer Immobilien-Investmentmarkt 2023
+
+
+
+---
+name: inf_gif
+class: left
+
+# Entspannung an der Inflationsfront?
+
+```{r hvpi_gif,echo=FALSE,message=FALSE,warning=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/hvpi_core.gif')
+```
+
+.quelle[Eigene Darstellung. Datenquelle: [Eurostat (2023)](https://ec.europa.eu/eurostat/web/hicp/database).]
+
+???
+
+* Entspannung nur auf den ersten Blick. Kerninflation nach wie vor sehr hoch (um 5%)
+
+---
+name: BlanchSumm
+class: left
+
+# Ende der säkularen Stagnation?
+
+<iframe width="1150" height="520" src="https://www.youtube.com/embed/df5csVeBcrQ?start=3607" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+???
+
+* Summers und Blanchard 2017 (?) Säkulare Stagnation. Liquiditätsfalle und zero lower bound
+* Nachdem sich die beiden lange Jahre einig waren, schätzen sie die zukünftige Entwicklung nun anders ein:
+  * Blanchard betont eher die Bedeutung des Save-Asset-Demand
+  * Summers betont stärker das Verhältnis von Ersparnis und Investition
+  
+* Blanchard glaubt eher an eine Rückkehr in die Vor-Covid-Welt, was die Realzinsen angeht und damit eine dynamisch ineffiziente Situation $r<g$, die aus seiner Sicht für eine aktivere Rolle der Fiskalpolitik spricht.
+* Summers vermutet strukturelle Änderungen und dauerhaft höhere Realzinsen, oberhalb der Wachstumsrate und führt dafür folgende Gründe an, die beide im Video diskutieren:
+  * Geopolitische Veränderungen und Re-Shoring/Near-Shoring aus politischen Gründen
+  * Demografischer Wandel
+  * höherer Investitionsbedarf (bspw. Grüne Infrastruktur)
+
+
+
+---
+name: riskpremia
+class: left
+
+# Renditeentwicklung von Anleihen vs. Immobilien (D)
+
+<br>
+<br>
+```{r riskpr,echo=FALSE,out.width='100%',fig.align='center',cache=TRUE}
+knitr::include_graphics('../images/session_IRE-Trends/Renditeabstand_RE-Bonds_(Colliers_2023).png')
+
+```
+
+.quelle[Quelle: [Colliers (2023).](https://citysurvey.colliers.de/makrookonomisches-umfeld/#Makrooekonomisches_Umfeld_2.2)]
+
+
+---
+name: demografie
+class: left
+
+# Demografische Entwicklung
+
+```{r,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/Bev_pyr_D.svg')
+```
+
+.quelle[Eigene Darstellung, Datenquelle: [Destatis (2023)](https://service.destatis.de/bevoelkerungspyramide/index.html).]
+
+
+
+
+---
+name: digit
+class: left
+
+# Digitalisierung ("on Purpose")
+
+```{r,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/Unruh_Kiron_(MIT_2018).png')
+```
+
+.quelle[Quelle: [Unruh/Kiron (2018)](https://sloanreview.mit.edu/article/the-convergence-of-digitalization-and-sustainability/).]
+
+
+
+
+???
+
+* Zum Thema Digitalisierung ließe sich allein ein ganzes Semester füllen, deshalb hier nur kurz und schon im Kontext mit dem nächsten Megatrend Nachhaltigkeit
+* Unruh/Kiron: Digitalisierung kann Beitrag zur Nachhaltigkeit leisten
+* passt zur Purpose-Diskussion im Bereich Strategy
+
+* Konkrete Potentiale in der Immobilienwirtschaft
+  * BIM, digitale Datenräume
+  * smart meter und unstrukturierte Daten
+  * Automatisierung - auf allen Managementebenen
+
+
+
+
+---
+name: greendeal
+class: left
+
+# (Energie-)Politische Rahmenbedingungen in Europa
+
+.panelset[
+.panel[.panel-name[Green Deal und ETS2]
+```{r,echo=FALSE,out.width='90%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/ets2_(umweltbundesamt).png')
+```
+.quellePanURL[Quelle: [Umweltbundesamt (2021)](https://www.umweltbundesamt.de/sites/default/files/medien/1410/dokumente/2022_01_17_factsheet_ets_2.pdf).]
+
+]
+.panel[.panel-name[ETS Phase 1-3]
+```{r,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/ets-carbon-price_2005-2020.svg')
+```
+.quellePanURL[Eigene Darstellung. Datenquelle: ICE/Statista.]
+]
+.panel[.panel-name[ETS Phase 4]
+```{r,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_url("https://ember-climate.org/data/data-tools/carbon-price-viewer/",height='480px')
+```
+.quellePanURL[Quelle: [ember-climate.org](https://ember-climate.org/data/data-tools/carbon-price-viewer/)]
+]
+]
+
+
+
+???
+
+* **Green Deal**
+
+.blockquote[
+"energy efficiency must be prioritised". Specifically for the building sector, accounting for around 40% of energy consumption, the announced ‘renovation wave’ and a recast of the Energy Performance of Buildings Directive (EPBD) aim to at least double the current renovation rates of 0.4–1.2% per year."
+.tr[
+— (EU Kommission, 2019), zitiert nach [Hummel et al](https://link.springer.com/article/10.1007/s12053-023-10097-6)
+]
+] 
+
+* Ab 2024 sollen im Rahmen des ETS2 auch **Gebäude** und der **Verkehrssektor** in den (bereits bestehenden!) europäischen Emissionshandel (ETS) einbezogen werden.
+  * ETS2 ersetzt dann letztlich die ESR (Effort Sharing Regulation), also die zwischenzeitlich verpflichtenden nationalen Emissionsziele (**grau gestrichelt**)
+  * Erstmals sollen Mitgliedsstaaten für 2024 ein Reporting erstellen (fällig bis Mitte 2025): **Monitoring Reporting and Veryfying (MRV)**
+  * bis 2026 eher softe Einphasung
+  * Dann bis 2030 klar definierte Schritte der Reduzierung von Emissionsrechten
+  * als Upstream Regulierung (d.h. nicht einzelne Haushalte müssen Emissionsrechte kaufen, sondern die "In-Verkehrsbringer")
+* Erlöse fließen in den 
+  * **Klimasozialfonds** (sozialer Ausgleich) und den
+  * **Innovationsfonds** (Finanzierung von Green Investments!)
+  
+
+* Wie teuer wird das? Schätzung der EU-Kommission bei vorgesehener Mengenregulierung Preisniveauzwischen 48€/tCO2 und 80€/t CO2 ergeben in 2030.
+
+* das schint eher optimistisch ist, wie ein Blick in den bestehenden **Emissionshandel** ETS zeigt
+
+* Dieser trat 2005 in Kraft und stellt quasi eine Umsetzung des Kyotoprotokolls (von 1997) dar
+  * seither wurden schrittweise mehr Sektoren integriert (bspw. neben Industrie seit 2013 auch Luftfahrtsektor)
+  * und in mehreren Schritten die Menge der Emissionsrechte reduziert (seit 2021 befinden wir uns in Phase 4, der letzten Phase mit klar vorgegebenen Reduktionszielen)
+  * Stabilisierung des Marktes bzw. CO2-Preises durch die **MSR** (Market Stability Reserve)
+
+
+
+
+* History in detail
+
+* Kyoto-Protokoll 1997: erstmals rechtlich verbindliche Ziele zur Emissionsreduktion
+* Green Paper EU 2000: Erste Ideen zu einem europ. Emissionshandel
+* EU ETS-Richtlinie zum Emissionshandel: 
+* Inkrafttreten ETS 2005 (vgl. [EU-Kommission](https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets/development-eu-ets-2005-2020_en)):
+  * Phase 1 (2005-2007): Pilotphase. Nur **Kraftwerke und energieintensive Industrien**. Emissionsrechte fast vollständig kostenlos, geringe Strafen (40€ pro Tonne). Erstmals CO$_2$-Preis
+  * Phase 2 (2008-2012): Einhaltung Kyotoprotokoll, Reduzierung Emissionsrechte um 6,5%, davon 90% als kostenlose Emisionsrechte, Strafe 100€ pro Tonne. Einbeziehung **Luftfahrtsektor**; Beitritt Liechtenstein, Island und Norwegen.
+  * Phase 3 (2013-2020): EU-weit gedeckelte Emissionsrechte statt bisher nationaler Obergrenzen. Auktion als Standardlösung (vorher wahlweise), **Einbeziehung weiterer Sektoren und Gas**
+  * Phase 4 (2021-2030): ETS als zentraler Baustein zum seit 2021 offiziellen Reduktionsziel (55% bis 2030). 
+    * Weiterhin kostenlose Emissionsrechte für (100% der Emissionen der) Sektoren mit dem höchsten Abwanderungsrisiko 
+    * Ansonsten Ausphasung kostenloser Emissionsrechte von 2026 (max. 30%) auf 0 in 2030
+    * Low-Carbon Finanzierung (Innovations- und Modernisierungsfonds)
+
+
+
+---
+name: TaxSFDR
+class: left
+
+# EU-Verordnungen 2019/2088 und 2020/852
+
+```{r,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/Anteil_SFDR_Typen.svg')
+```
+
+.quelle[Eigene Darstellung. Datenquelle: [Morningstar (2023)](https://www.morningstar.de/de/news/231440/sfdr-verm%C3%B6gen-von-artikel-9-fonds-nach-welle-von-herabstufungen-fast-halbiert.aspx).]
+
+???
+
+* SFDR: EU Sustainable Finance Disclosure Regulation 
+* Deutsch: EU-Verordnung 2019/2088: Offenlegungsverordnung
+  *  nachhaltigkeitsbezogene Offenlegungspflichten im Finanzdienstleistungssektor
+  * besondere Bedeutung für die Praxis: Transparenzartikel
+    * Artikel 6
+        * Nachhaltigkeits*risiken* müssen offengelegt werden (oder: Begründung warum als nicht notwendig erachtet)
+        * Einbeziehung in Investitions-/Beratungsentscheidungen
+        * Bewertung Renditeeffekte
+        
+    * **Artikel 8** (hellgrün)
+      * Bwerbung ökologischer/sozialer Merkmale
+      * Zielunternehmen wenden gute Governance an
+    
+    * **Artikel 9** (dunkelgrün)
+      * sog. Impact Funds
+      * Anstreben einer nachhaltigen Investition, besonders: CO2-Reduktion
+      
+  * In Kraft seit März 2021
+  * Seither müssen KAGs Informationen über ESG-Praktiken, *Nachhaltigkeitsrisiken* und *Nachhaltigkeitsfaktoren* (-auswirkungen) der Fonds offenlegen
+  
+* EU-Verordnung 2020/852: Taxonomieverordnung
+  * Definition nachhaltiger Investitionen
+  * Eine ökologisch nachhaltige Investition ist eine Investition in eine oder mehrere
+Wirtschaftstätigkeiten, die gemäß der TaxonomieVO als ökologisch nachhaltig
+gelten
+
+* Interessant: 
+   * Zwischen 09/2022 und 02/2023 wurden 307 Fonds von Artikel 9 auf Artikel 8 herabgestuft
+   * Hintergrund: Im Vorfeld der neuen Offenlegungsregelung und nach Klarstellung der Aufsichtsbehörden, dass Fonds nach *Artikel 9* **nur in nachhaltige Anlagen** investieren dürfen, haben viele Fondsmanager die **Klassifizierung** ihrer Fonds **überprüft** und **Artikel 9-Produkte auf Artikel 8 herabgestuft**. 
+  
+
+
+---
+name: GreenInvest
+class: left
+
+# Investitionen in ESG-konforme Gebäude (D)
+
+.panelset[
+.panel[.panel-name[Volumina]
+
+```{r ESG-vol,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/Invest_vol_ESG.svg')
+```
+
+.quellePanURL[Eigene Darstellung, Datenquelle: [BNP Paribas RE](https://www.realestate.bnpparibas.de/blog/esg/green-buildings-nachhaltiges-bauen-auf-dem-vormarsch).]
+
+]
+.panel[.panel-name[Nutzungsart]
+
+```{r ESG-use,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/Sector_ESG.svg')
+```
+
+.quellePanURL[Eigene Darstellung, Datenquelle: [BNP Paribas RE](https://www.realestate.bnpparibas.de/blog/esg/green-buildings-nachhaltiges-bauen-auf-dem-vormarsch).]
+]
+
+.panel[.panel-name[Käufergruppen]
+
+```{r ESG-buyers,echo=FALSE,out.width='100%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/Buyers_ESG.svg')
+```
+
+.quellePanURL[Eigene Darstellung, Datenquelle: [BNP Paribas RE](https://www.realestate.bnpparibas.de/blog/esg/green-buildings-nachhaltiges-bauen-auf-dem-vormarsch).]
+
+]
+]
+
+???
+
+* Lag der relative Anteil der grünen Investments an den Einzeldeals 2021 noch bei 25,7 %, stieg er 2022 bereits auf 30,6 %.
+
+* Anteil des Investitionsvolumens verschiedener Käufergruppen, der in grüne Investments geht. Bspw. waren über 72% der Investitionen von Versicherungen grüne Investments.
+
+
+
+---
+name: ESGMotive
+class: left
+
+# ESG in der Immobilienwirtschaft
+
+.panelset[
+.panel[.panel-name[Bedeutung]
+
+Zunehmende Bedeutung von ESG für Investoren und Nutzer in 2022:
+
+```{r,echo=FALSE,out.width='70%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/ESG_2022_wichtiger_(CBRE_2023)_S7.png')
+```
+]
+.panel[.panel-name[Motive]
+
+Unterschiedliche Motive für zunehmende Berücksichtigung von ESG:
+
+```{r,echo=FALSE,out.width='70%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/ESG_Motive_NutzerInvestoren_(CBRE_2023)_S7.png')
+```
+]
+]
+
+.quelle[Quelle: [CBRE (2023, S.7)](https://www.cbre.com/-/media/project/cbre/shared-site/insights/books/2023-book-media-folder/esg-value-drivers-revealed-media-folder/2022_global_esg_survey.pdf).]
+
+
+
+
+
+---
+name: sustrends
+class: left
+
+# Trends: Nachhaltiges Bauen und Quartiersentwicklung
+
+.panelset[
+.panel[.panel-name[RAG Headquarter]
+```{r,echo=FALSE,out.width='77%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/RAG_c2c_(bundesstiftung_baukultur).jpg')
+```
+<br>
+.quellePanURL[Bildquelle: [bundesstiftung-baukultur.de](https://www.bundesstiftung-baukultur.de/baukultur-bundesweit/beispiele-guter-baukultur/detail/rag-stiftung-rag-ag).]
+]
+.panel[.panel-name[Rocket-Haus]
+```{r,echo=FALSE,out.width='35%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/holzhochhaus_winterthur_(20min_2022).png')
+```
+
+.quellePanURL[Quelle: [20min.ch (27.04.2022)](https://www.20min.ch/story/internationale-medien-feiern-weltweit-groesstes-holz-hochhaus-in-winterthur-401600998185)]
+]
+.panel[.panel-name[Telekom Redevelopment]
+```{r,echo=FALSE,out.width='81%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/telekom_KN_(suedkurier).png')
+```
+<br>
+.quellePanURL[Bildquelle: [Südkurier (22.10.2022)](https://www.suedkurier.de/region/kreis-konstanz/konstanz/verzoegert-sich-der-umbau-des-telekom-hochhauses-und-wie-teuer-wird-s;art372448,11331031)]
+]
+.panel[.panel-name[Urban Farming]
+```{r,echo=FALSE,out.width='77%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/urban_farming_(lemonde).png')
+```
+<br>
+.quellePanURL[Bildquelle: [Le Monde (14.08.2019)](https://www.lemonde.fr/planete/article/2019/08/13/la-plus-grande-ferme-urbaine-d-europe-ouvrira-au-printemps-2020-a-paris_5499051_3244.html).]
+]
+.panel[.panel-name[Nachhaltige Quartiere]
+```{r,echo=FALSE,out.width='87%',fig.align='center'}
+knitr::include_graphics('../images/session_IRE-Trends/nachhaltige_quartiersentwicklung_(fraunhofer).png')
+```
+<br>
+.quellePanURL[Bildquelle: [Fraunhofer Umsicht (22.10.2022)](https://www.umsicht.fraunhofer.de/de/forschung-fuer-den-markt/nachhaltige-gebaeude-und-quartiersentwicklung.html)]
+]
+]
+
+
+???
+
+* Verwaltungsgebäude der RAG-Stiftung in Essen 
+  * als erstes Projekt in Deutschland, das nach dem **Cradle to Cradle**-Konzept realisiert wurde. 
+  * Einsatz einer **sortenrein trennbaren Aluminium-Glas-Fassade** (nichts verklebt, sondern ausschließlich gesteckt und geschraubt)
+
+* 100-Meter-Holzhochhaus Winterthur (Fertigstellung 2026?) 
+  * *Implenia* setzt das Projekt im Auftrag der Ina Invest Holding AG 
+  * Wohnnutzung
+  * **Rocket-Haus** derzeit das weltweit höchste in Planung befindliche Wohngebäude aus Holz in reiner **"timber structure"**
+  * derzeit auch zahlreich Projekte in **"hybrid-timber"** (meist Stahlbeton-Fundamente und Aufzüge/Treppenhäuser, dann aufgeständert Holzbauweise)
+
+
+* **Urban Farming**
+  * Bild zeigt das weltweit größte Urban Farming-Projekt auf den Dächern der Messehallen der Expo Porte de Versailles 
+    * insgesamt 14000qm, Bewirtschaftung durch 20 angestellte GärtnerInnen
+    * angelegt als profitables Geschäftsmodell
+    * Ziel: 1t Lebensmittel täglich, die regional vermarktet werden sollen
+  * ein weiteres Projekt (mit 640qm deutlich kleiner) in Paris auf einem Bürogebäude der PNB Parbas (Anbau von Obst, Gemüse und Kräutern durch Mitarbeitende in Teams)
+
+* Quartiersentwicklung:  
+  * Ansatz ist grundsätzlich, Quartiere als Ganzes zu betrachten. 
+  * Im städtischen Raum greifen die unterschiedlichsten Funktionen wie in einem Puzzle ineinander:
+    * Bevölkerung, Energiesysteme, Gebäude, Verkehr, städtisches Grün und Emissionen.
+
+
+
+---
+name: Fazit
+class: left
+
+# Key Learnings
+
+* Starke Preiskorrekturen bei öffentlich gehandelten Immobiliengesellschaften
+--
+
+* Abwartende Haltung auf privaten Märkten
+  * Transaktionsvolumina deutlich rückläufig, aber noch auf hohem Niveau
+  * Vermehrt Korrekturen bei Angebotspreisen
+
+--
+* Deutliche Bremsspuren in der Projektentwicklung
+  * Baukosten und geringe Risikoprämien
+  * Künftig verstärkt Entwicklung im Bestand (GHG Protokoll)
+
+--
+* Regional und sektoral heterogene Entwicklung
+  * Südeuropa und Handelsimmoblien robuster
+  * Mittel-/Nordeuropa und Büroimmobilien schwächer
+
+--
+* Neues Preisniveau muss noch gefunden werden. Bedeutsam dabei:
+  * Makroökonomische Entwicklung und demografischer Wandel
+  * Nachhaltigkeitsaspekte und politische Risiken
+
+--
+* Nachhaltiges Investieren als intakter Trend, gerade in der Immobilienbranche
+  * Zertifizierungen als Herausforderung für Investoren
+  * Digitalisierung und Nachhaltigkeit: großes Potenzial für Synergien
+  
+
+
+???
+
+* Zur Projektentwicklung konnte ich mangels Zeit nichts sagen, aber zumindest an dieser Stelle will ich noch ein paar entscheidende Aspekte im Zusammenhang mit der Projektentwicklung nennen.
+
+
+* **NEUES Preisniveau**
+  * Stützende Faktoren: bisher stabile Nachfrage nach Flächen (Realwirtschaft)
+  * Nachhaltigkeitsaspekte und politische Risiken
+    * Einerseits sollte Investitionsbedarf stützen
+    * Andererseits bisher wenig Planbarkeit bspw. ETS2
+    * Gefahr von stranded Assets?
+
+---
+name: EndHanks
+class: center
+
+background-size: 75%
+background-image: url(https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif)
+

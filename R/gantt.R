@@ -1,4 +1,13 @@
-library("DiagrammeR")
+# ggplot -----
+
+
+
+
+
+
+
+# DiagrammeR-Package ----
+library(DiagrammeR)
 # Define the Gantt chart and plot the result (not shown)
 mermaid("gantt
              dateFormat  DD.MM.YYYY

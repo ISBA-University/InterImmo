@@ -34,9 +34,9 @@
 
 .mycontacts {
   text-align: left;
-  margin-top: -20px;
+  padding-top: 25px;
   margin-left: 15px;
-  line-height: 80%;
+  line-height: 40%;
 }
 
 .title-slide h1  {

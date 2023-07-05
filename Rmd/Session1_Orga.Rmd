@@ -51,10 +51,11 @@ library(fontawesome)
 
 # Internationale Immobilienmärkte
 
+## Intake 2020B
 
-## Organisatorisches
+### Organisatorisches
 
-### Sommersemester 2023 - Intake 2020B
+
 
 <br>
 <br>
@@ -63,9 +64,10 @@ library(fontawesome)
 <br>
 <br>
 <br>
+<br>
+### Sommersemester 2023 
 <br>
 ### Prof. Dr. Jörg Schoder
-<br>
 .mycontacts[
 `r fa('github')` @ISBA-University
 `r fa('linkedin')` @jfschoder
@@ -87,7 +89,9 @@ class: left
 
 # Intro
 
-<iframe width="1000" height="550" src="https://www.youtube.com/embed/HRILg3916oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1000" height="520" src="https://www.youtube.com/embed/sSOkdUqmQqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+.quelle[Weitere Infos: [JLL Global Real Estate Perspective May 2023](https://www.jll.de/en/trends-and-insights/research/global/gmp).]
 
 ---
 name: Orga

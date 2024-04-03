@@ -1,6 +1,6 @@
 ---
 title: "Internationale Immobilienmärkte"
-subtitle: "Intake 2020 B"
+subtitle: "Intake 2021 A"
 author: "Prof. Dr. Jörg Schoder"
 institute: "" 
 date: "`r Sys.Date()`"
@@ -55,7 +55,7 @@ library(fontawesome)
 # Internationale Immobilienmärkte
 
 
-## Intake 2020B
+## Intake 2021 A
 
 ### Europäische Investmentmärkte - Aktuelle Trends.
 
@@ -69,7 +69,7 @@ library(fontawesome)
 <br>
 <br>
 <br>
-### Sommersemester 2023 
+### Sommersemester 2024 
 <br>
 ### Prof. Dr. Jörg Schoder
 .mycontacts[

@@ -1,7 +1,7 @@
-# Nationale und Internationale Immobilienmärkte
+# Immobilienmärkte und Aktuelle Trends in der Immobilienwirtschaft
 
 
-Folien zum Modul "Nationale und Internationale Immobilienmärkte" an der ISBA, Studienort Freiburg
+Folien zu den Teilmodulen "Immobilienmärkte" und "Aktuelle Trends in der Immobilienwirtschaft" an der ISBA, Studienort Freiburg
 
 [Organisatorisches](https://isba-university.github.io/InterImmo/Rmd/Session1_Orga.html#1)
 

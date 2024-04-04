@@ -89,9 +89,9 @@ class: left
 
 # Intro
 
-<iframe width="1000" height="520" src="https://www.youtube.com/embed/sSOkdUqmQqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1000" height="520" src="https://www.youtube.com/embed/rzGR5vB9oTQ?si=yNXPfQHHSMahrIpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-.quelle[Weitere Infos: [JLL Global Real Estate Perspective May 2023](https://www.jll.de/en/trends-and-insights/research/global/gmp).]
+.quelle[Weitere Infos: [JLL Global Real Estate Perspective I 2024 outlook, Nov 2023](https://www.jll.de/en/trends-and-insights/research/global/gmp).]
 
 ---
 name: Orga
@@ -247,7 +247,7 @@ class: left
 ## Berichte und Gutachten
 
 .blockquote[
-[Feld, L. et al. (2023)](https://zia-deutschland.de/fruehjahrsgutachten/): Frühjahrsgutachten Immobilienwirtschaft 2023 des Rates der Immobilienweisen. ZIA, Berlin.
+[Feld, L. et al. (2024)](https://zia-deutschland.de/fruehjahrsgutachten/): Frühjahrsgutachten Immobilienwirtschaft 2024 des Rates der Immobilienweisen. ZIA, Berlin.
 ]
 
 

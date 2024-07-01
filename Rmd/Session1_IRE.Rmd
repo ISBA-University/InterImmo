@@ -1,6 +1,6 @@
 ---
 title: "Internationale Immobilienmärkte"
-subtitle: "Intake 2021 A"
+subtitle: "Intake 2021 B"
 author: "Prof. Dr. Jörg Schoder"
 institute: "" 
 date: "`r Sys.Date()`"
@@ -55,7 +55,7 @@ library(fontawesome)
 # Internationale Immobilienmärkte
 
 
-## Intake 2021 A
+## Intake 2021 B
 
 ### Globalisierung und Institutionenökonomischer Ansatz
 

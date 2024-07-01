@@ -1,6 +1,6 @@
 ---
 title: "Internationale Immobilienmärkte"
-subtitle: "Intake 2021 A"
+subtitle: "Intake 2021 B"
 author: "Prof. Dr. Jörg Schoder"
 institute: "ISBA" 
 date: "`r Sys.Date()`"
@@ -51,7 +51,7 @@ library(fontawesome)
 
 # Internationale Immobilienmärkte
 
-## Intake 2021 A
+## Intake 2021 B
 
 ### Organisatorisches
 
@@ -309,7 +309,7 @@ class: left
 
 
 ```{r, echo=FALSE,fig.align='center',out.width="100%"}
-knitr::include_graphics('../images/session_Orga/roadmap_Intake2021A.PNG')
+knitr::include_graphics('../images/session_Orga/roadmap_Intake2021B.PNG')
 ```
 
 

@@ -78,6 +78,11 @@ library(fontawesome)
 ]
 
 
+```{r}
+#| fig-align: 'right'
+library(qrcode)
+qrcode::qrcode_gen("https://your-website-or-form-link.com")
+```
 
 
 

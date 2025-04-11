@@ -1,6 +1,6 @@
 ---
 title: "Internationale Immobilienmärkte"
-subtitle: "Intake 2021 B"
+subtitle: "Intake 2022 A"
 author: "Prof. Dr. Jörg Schoder"
 institute: "ISBA" 
 date: "`r Sys.Date()`"
@@ -51,7 +51,7 @@ library(fontawesome)
 
 # Internationale Immobilienmärkte
 
-## Intake 2021 B
+## Intake 2022 A
 
 ### Organisatorisches
 
@@ -65,7 +65,7 @@ library(fontawesome)
 <br>
 <br>
 <br>
-### Sommersemester 2024
+### Sommersemester 2025
 <br>
 ### Prof. Dr. Jörg Schoder
 .mycontacts[
@@ -89,9 +89,9 @@ class: left
 
 # Intro
 
-<iframe width="1000" height="520" src="https://www.youtube.com/embed/rzGR5vB9oTQ?si=yNXPfQHHSMahrIpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1000" height="520" src="https://www.youtube.com/embed/qWYv6wp9xlg?si=Esk9Lczn-RazZmjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-.quelle[Weitere Infos: [JLL Global Real Estate Perspective I 2024 outlook, Nov 2023](https://www.jll.de/en/trends-and-insights/research/global/gmp).]
+.quelle[Weitere Infos: [JLL Global Real Estate Perspective I 2025 outlook, Nov 2023](https://www.jll.de/en/trends-and-insights/research/global/global-real-estate-outlook).]
 
 ---
 name: Orga
@@ -309,7 +309,7 @@ class: left
 
 
 ```{r, echo=FALSE,fig.align='center',out.width="100%"}
-knitr::include_graphics('../images/session_Orga/roadmap_Intake2021B.PNG')
+knitr::include_graphics('../images/session_Orga/roadmap_Intake2022A.PNG')
 ```
 
 
